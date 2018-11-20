@@ -342,7 +342,7 @@ In the end, John would like to have 2 arrays:
 
 GOOD LUCK 😀
 */
-
+/*
 function tipCalculator(bill) {
     var percentage;
         if (bill < 50) {
@@ -366,7 +366,63 @@ var finalValues = [bills[0] + tips[0],
 
 
 console.log(tips, finalValues);
-        
+ */
+/*
+ var john = {
+     firstName: 'John',
+     lastName: 'Smith',
+     birthYear: 1990,
+     family:  ['Jane', 'Mark', 'Bob', 'Emily'],
+     job: 'taecher',
+     isMarried: false
+ };
+
+
+ 
+ //Retrieving dta from an object
+// dot notation
+ console.log(john.firstName);
+ // brackets with key name
+ console.log(john['lastName']);
+ //declaring variable then use the var
+ var x = 'birthYear';
+ console.log(john[x]);
+
+ //changing or mutating data
+ john.job = 'designer';
+ john['isMarried'] = true
+ console.log(john);
+
+ //new Object syntax dot notation
+ var jane = new Object();
+ jane.firstName = 'Jane';
+ jane.birthYear = 1969;
+ jane['lastName'] = 'Smith';
+ console.log(jane);
+*/
+
+
+
+// Objects and Methods
+//only objects have methods
+//.this means current object
+var john = {
+    firstName: 'John',
+    lastName: 'Smith',
+    birthYear: 1973,
+    family:  ['Jane', 'Mark', 'Bob', 'Emily'],
+    job: 'taecher',
+    isMarried: false,
+    calcAge: function(birthYear) {
+        this.age = 2018 - this.birthYear;
+    }
+};
+
+john.calcAge();
+console.log(john);
+
+
+
 
 
 
