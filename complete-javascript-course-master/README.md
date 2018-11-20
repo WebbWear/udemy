@@ -1,3 +1,7 @@
+I highly recomend taking this course from Jonas Schmedtmann if you want to learn JavaScript.
+https://www.udemy.com/the-complete-javascript-course/learn/v4/content
+
+
 # Course Material and FAQ for my Complete JavaScript Course
 
 This repo contains starter files and the finished project files for all the projects contained in the course.
