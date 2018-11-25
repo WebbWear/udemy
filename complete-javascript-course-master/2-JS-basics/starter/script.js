@@ -406,6 +406,7 @@ console.log(tips, finalValues);
 // Objects and Methods
 //only objects have methods
 //.this means current object
+/*
 var john = {
     firstName: 'John',
     lastName: 'Smith',
@@ -421,6 +422,10 @@ var john = {
 john.calcAge();
 console.log(john);
 
+*/
+
+
+// 
 
 
 
