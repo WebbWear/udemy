@@ -435,6 +435,8 @@ Let's remember the first coding challenge where Mark and John compared their BMI
 
 Remember: BMI = mass / height^2 = mass / (height * height). (mass in kg and height in meter).
 */
+
+/*
 var john = {
     fullName: 'John Smith',
     mass: 110,
@@ -467,9 +469,32 @@ if (john.calcBMI() > mark.calcBMI()) {
     console.log('They have the same BMI');
 }
 
+*/
+
+// Loops and Iteration
+/*
+
+//  For loop
+for (i = 1; i <= 100; i++) {
+    console.log(i);
+}
+*/
 
 
+var jeff = ['Jeff', 'Webb', 1973, 235, 'driver', true];
+    for (var i = 0; i < jeff.length; i++) {
+        console.log(jeff[i]);
+    }
 
+// While loop
+
+var i = 0;
+    while(i < jeff.length) {
+        console.log(jeff[i]);
+        i++;
+    }
+
+    // continue and break statements
 
 
 
