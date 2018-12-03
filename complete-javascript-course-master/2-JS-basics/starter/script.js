@@ -502,6 +502,19 @@ var i = 0;
                 console.log(jeff[i]);
     }
 
+        for (var i = 0; i < jeff.length; i++) {
+            if (typeof jeff[i] !== 'string') break;
+                console.log(jeff[i]);
+}
+
+// Looping backward
+
+        for (var i = jeff.length - 1; i >= 0; i--) {
+            console.log(jeff[i]);
+
+        }
+
+
 
 
 
