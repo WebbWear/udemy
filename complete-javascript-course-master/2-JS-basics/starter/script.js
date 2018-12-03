@@ -480,7 +480,7 @@ for (i = 1; i <= 100; i++) {
 }
 */
 
-
+/*
 var jeff = ['Jeff', 'Webb', 1973, 235, 'driver', true];
     for (var i = 0; i < jeff.length; i++) {
         console.log(jeff[i]);
@@ -493,8 +493,14 @@ var i = 0;
         console.log(jeff[i]);
         i++;
     }
-
+*/
     // continue and break statements
+
+    var jeff = ['Jeff', 'Webb', 1973, 235, 'driver', true];
+        for (var i = 0; i < jeff.length; i++) {
+            if (typeof jeff[i] !== 'string') continue;
+                console.log(jeff[i]);
+    }
 
 
 
