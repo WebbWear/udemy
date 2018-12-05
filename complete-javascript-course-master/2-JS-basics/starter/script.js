@@ -495,7 +495,7 @@ var i = 0;
     }
 */
     // continue and break statements
-
+/*
     var jeff = ['Jeff', 'Webb', 1973, 235, 'driver', true];
         for (var i = 0; i < jeff.length; i++) {
             if (typeof jeff[i] !== 'string') continue;
@@ -514,7 +514,9 @@ var i = 0;
 
         }
 
+*/
 
+// Challenge 5
 
 
 
