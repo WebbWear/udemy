@@ -55,9 +55,16 @@ document.querySelector(".btn-roll").addEventListener("click", function() {
 
         // hide dice between change of players until new roll of dice
         document.querySelector('.dice').style.display = 'none';
+      }
 
+});
 
-   }
+document.querySelector('.btn-hold').addEventListener('click', function() {
+  // add current score to global score
+  scores[activePlayer] += roundScore;
+  // update the Ui
+  document.querySelector('#score-' + activePlayer).textContent = scores[activePlayer];
+  // check if player won game
 
 });
 
