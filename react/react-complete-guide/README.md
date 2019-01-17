@@ -1,3 +1,12 @@
+Udemy course: Academind by Maximilian Schwarzmüller
+Course: React 16.6 - The Complete Guide (incl. React Router & Redux)
+
+https://www.udemy.com/react-the-complete-guide-incl-redux/learn/v4/overview
+
+
+
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
