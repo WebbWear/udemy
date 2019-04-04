@@ -26,26 +26,26 @@ var age = 45;
 console.log(firstName + ' ' + age);
 */
 
-/*
-var year, yearJeff, yearMaggie;
-now = 2018;
-ageJeff = 45;
-ageMaggie = 14;
 
-yearJeff = now - 45;
-yearMaggie = now - 14;
+// var year, yearJeff, yearMaggie;
+// now = 2018;
+// ageJeff = 45;
+// ageMaggie = 14;
 
-console.log(yearJeff);
-console.log (now + 2);
+// yearJeff = now - 45;
+// yearMaggie = now - 14;
+
+// console.log(yearJeff);
+// console.log (now + 2);
 
 
-//Logical operators
-var jeffOlder = ageJeff > ageMaggie;
-console.log(jeffOlder);
+// //Logical operators
+// var jeffOlder = ageJeff > ageMaggie;
+// console.log(jeffOlder);
 
-// type operator
-console.log(typeof jeffOlder);
-*/
+// // type operator
+// console.log(typeof jeffOlder);
+
 
 // Operator precedence
 /*
