@@ -143,38 +143,38 @@ if (age < 13) {
 }
 */
 
-/*
+
 // The Ternary Operator and Switch Statements
 
-var firstName = 'John';
-var age = 45;
+// var firstName = 'John';
+// var age = 45;
 
-//Ternary
-age >= 18 ? console.log(firstName + ' drinks beer.')
-: console.log(firstName + ' drinks juice.');
+// //Ternary
+// age >= 18 ? console.log(firstName + ' drinks beer.')
+// : console.log(firstName + ' drinks juice.');
 
-var drink = age >= 18 ? 'beer' : 'juice';
-console.log(drink);
+// var drink = age >= 18 ? 'beer' : 'juice';
+// console.log(drink);
 
-// switch
-var job = 'driver';
-switch (job) {
-    case 'teacher':
-        console.log(firstName + ' teaches kids how to code.');
-        break;
-    case 'driver':
-        console.log(firstName + ' drives a limo.');
-        break;
-    case 'designer':
-        console.log(firstName + ' designs websites');
-        break;
-    default:
-        console.log(firstName + ' does something else.');
-}
+// // switch
+// var job = 'driver';
+// switch (job) {
+//     case 'teacher':
+//         console.log(firstName + ' teaches kids how to code.');
+//         break;
+//     case 'driver':
+//         console.log(firstName + ' drives a limo.');
+//         break;
+//     case 'designer':
+//         console.log(firstName + ' designs websites');
+//         break;
+//     default:
+//         console.log(firstName + ' does something else.');
+// }
 
-*/
 
-// Truthy and Falsy
+
+// Trut hy and Falsy
 
 // falsy: undefined, null, 0, '', NaN
 // truthy values: NOT falsy
@@ -225,35 +225,35 @@ if (scoreJohn > scoreMike && scoreJohn > scoreMary) {
 */
 
 // Functions
-/*
-function calculateAge(birthYear) {
-    return 2018 - birthYear;   
-}
 
-    var ageJeff = calculateAge(1973);
-    var ageAnastasia = calculateAge(2008);
-    var ageKathleen = calculateAge(1972);
-    var ageGrandpa = calculateAge(1934);
+// function calculateAge(birthYear) {
+//     return 2019 - birthYear;   
+// }
 
-    console.log(ageJeff, ageAnastasia, ageKathleen);
+//     var ageJeff = calculateAge(1973);
+//     var ageAnastasia = calculateAge(2008);
+//     var ageKathleen = calculateAge(1972);
+//     var ageGrandpa = calculateAge(1934);
 
-function yearsUntilRetirement(year, firstName) {
-    var age = calculateAge(year);
-    var retirement = 65 - age;
+//     console.log(ageJeff, ageAnastasia, ageKathleen);
 
-    if (retirement > 0) {
-        console.log(firstName + ' retires in ' + retirement + ' years.');
-    } else {
-        console.log(firstName + ' is already retired.');
-    }
-}
+// function yearsUntilRetirement(year, firstName) {
+//     var age = calculateAge(year);
+//     var retirement = 65 - age;
 
-    yearsUntilRetirement(1973, 'Jeff');
-    yearsUntilRetirement(2008, 'Anastasia');
-    yearsUntilRetirement(1973, 'Kathleen');
-    yearsUntilRetirement(1934, 'Grandpa');
+//     if (retirement > 0) {
+//         console.log(firstName + ' retires in ' + retirement + ' years.');
+//     } else {
+//         console.log(firstName + ' is already retired.');
+//     }
+// }
 
-*/
+//     yearsUntilRetirement(1973, 'Jeff');
+//     yearsUntilRetirement(2008, 'Anastasia');
+//     yearsUntilRetirement(1973, 'Kathleen');
+//     yearsUntilRetirement(1934, 'Grandpa');
+
+ 
 
 //  JS Kids Book
 /*
