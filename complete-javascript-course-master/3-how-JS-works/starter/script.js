@@ -100,21 +100,23 @@ Each new function creates a scope: the scope/environment, in which the variables
 //     console.log(this);
 // }
 
-var john = {
-    name: 'John',
-    yearOfBirth: 1991,
-    calculateAge: function() {
-        console.log(this);
-        console.log(2019 - this.yearOfBirth);
-    }
-}
+// var john = {
+//     name: 'John',
+//     yearOfBirth: 1991,
+//     calculateAge: function() {
+//         console.log(this);
+//         console.log(2019 - this.yearOfBirth);
+//     }
+// }
 
-john.calculateAge();
+// john.calculateAge();
 
-var mike = {
-    name: 'Mike',
-    yearOfBirth: 1971
-};
+// var mike = {
+//     name: 'Mike',
+//     yearOfBirth: 1971
+// };
 
-mike.calculateAge = john.calculateAge;
-mike.calculateAge();
+// mike.calculateAge = john.calculateAge;
+// mike.calculateAge();
+
+
