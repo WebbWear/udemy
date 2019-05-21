@@ -56,45 +56,65 @@ var jane = Object.create(personProto, {
 
 
 // Primitives
-var a = 23;
-var b = a;
-a = 46;
-console.log(a);
-console.log(b);
+// var a = 23;
+// var b = a;
+// a = 46;
+// console.log(a);
+// console.log(b);
 
-// Objects
+// // Objects
 
-var obj1 = {
-    name: 'Jeff',
-    age: 46
-};
-var obj2 = obj1;
-obj1.age = 44;
-console.log(obj1.age);
-console.log(obj2.age);
+// var obj1 = {
+//     name: 'Jeff',
+//     age: 46
+// };
+// var obj2 = obj1;
+// obj1.age = 44;
+// console.log(obj1.age);
+// console.log(obj2.age);
 
-// Functions
-var age = 47;
-var obj = {
-    name: 'Kat',
-    city: 'Tampa'
-};
+// // Functions
+// var age = 47;
+// var obj = {
+//     name: 'Kat',
+//     city: 'Tampa'
+// };
 
-function change(a, b) {
-    a = 46;
-    b.city = 'St Pete';
+// function change(a, b) {
+//     a = 46;
+//     b.city = 'St Pete';
+// }
+
+// change(age, obj);
+
+// console.log(age);
+// console.log(obj);
+
+
+// Function returning functions
+
+function interviewQuestion(job) {
+    if (job === 'designer') {
+        return function(name) {
+            console.log(name + ', can you please explain what UX design is?');
+        }
+    } else if (job === 'teacher') {
+        return function(name) {
+            console.log('What subject do you teach, ' + name + '?');
+        }
+    } else {
+        return function(name) {
+            console.log('Hello ' + name + ', what do you do?');
+        }
+    }
 }
 
-change(age, obj);
-
-console.log(age);
-console.log(obj);
+var teacherQuestion = interviewQuestion('teacher');
+var designerQuestion = interviewQuestion('designer');
 
 
-
-
-
-
+teacherQuestion('John');
+designerQuestion('John');
 
 
 
