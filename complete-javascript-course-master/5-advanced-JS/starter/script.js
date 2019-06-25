@@ -93,31 +93,52 @@ var jane = Object.create(personProto, {
 
 // Function returning functions
 
-function interviewQuestion(job) {
-    if (job === 'designer') {
-        return function(name) {
-            console.log(name + ', can you please explain what UX design is?');
-        }
-    } else if (job === 'teacher') {
-        return function(name) {
-            console.log('What subject do you teach, ' + name + '?');
-        }
-    } else {
-        return function(name) {
-            console.log('Hello ' + name + ', what do you do?');
-        }
+// function interviewQuestion(job) {
+//     if (job === 'designer') {
+//         return function(name) {
+//             console.log(name + ', can you please explain what UX design is?');
+//         }
+//     } else if (job === 'teacher') {
+//         return function(name) {
+//             console.log('What subject do you teach, ' + name + '?');
+//         }
+//     } else {
+//         return function(name) {
+//             console.log('Hello ' + name + ', what do you do?');
+//         }
+//     }
+// }
+
+// var teacherQuestion = interviewQuestion('teacher');
+// var designerQuestion = interviewQuestion('designer');
+
+
+// teacherQuestion('John');
+// designerQuestion('John');
+
+
+///////////////////////
+//Lecture: Bind, call and apply
+
+var john = {
+    name: 'John',
+    age: 26,
+    job: 'taecher'
+,
+presentation: function(style, timeOfDay) {
+    if (style === 'formal') {
+        console.log('Good ' + timeOfDay + ', Ladies and gentlemen! I\'m ' +  this.name + ', I\'m a ' + this.job + ' and I\'m ' + this.age + ' years old.');
+    } else if (style === 'friendly') {
+        console.log('Hey! What\'s up? I\'m ' +  this.name + ', I\'m a ' + this.job + ' and I\'m ' + this.age + ' years old. Have a nice ' + timeOfDay + '.');
+    }
     }
 }
+var emily = {
+    name: 'Emily',
+    age: 35,
+    job: 'designer'
+};
 
-var teacherQuestion = interviewQuestion('teacher');
-var designerQuestion = interviewQuestion('designer');
-
-
-teacherQuestion('John');
-designerQuestion('John');
-
-
-
-
-
+john.presentation('formal', 'morning');
+john.presentation.call(emily, 'friendly', 'afternoon');
 
